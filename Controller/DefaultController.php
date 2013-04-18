@@ -24,8 +24,8 @@ class DefaultController extends Controller
     /**
      * Index action
      *
-     * @param  [string] $name [Email file to use?]
-     * @return [object]       [A response]
+     * @param  string $name
+     * @return object
      */
     public function indexAction($name)
     {
