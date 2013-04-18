@@ -1,0 +1,67 @@
+Return-Path: <cyrus@douglas>
+Received: from murder ([unix socket])
+	 by douglas (Cyrus v2.2.13-Debian-2.2.13-10) with LMTPA;
+	 Thu, 30 Aug 2007 19:18:16 +0200
+X-Sieve: CMU Sieve 2.2
+Received: from localhost (localhost [127.0.0.1])
+	by douglas.wargames.hu (Postfix) with ESMTP id 213BF7064
+	for <phoenix@dawnspill.hu>; Thu, 30 Aug 2007 19:18:16 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at wargames.hu
+Received: from douglas.wargames.hu ([127.0.0.1])
+	by localhost (douglas.wargames.hu [127.0.0.1]) (amavisd-new, port 10024)
+	with SMTP id 4B8tdMthRLCp for <phoenix@dawnspill.hu>;
+	Thu, 30 Aug 2007 19:14:26 +0200 (CEST)
+X-Greylist: delayed 408 seconds by postgrey-1.27 at douglas; Thu, 30 Aug 2007 19:14:25 CEST
+Received: from fmx08.freemail.hu (fmx08.freemail.hu [195.228.245.58])
+	by douglas.wargames.hu (Postfix) with SMTP id 398FD703F
+	for <phoenix@dawnspill.hu>; Thu, 30 Aug 2007 19:14:25 +0200 (CEST)
+Received: (qmail 9636 invoked from network); 30 Aug 2007 19:07:31 +0200
+Received: from fm09.freemail.hu (195.228.245.109)
+  by fmx08.freemail.hu with SMTP; 30 Aug 2007 19:07:31 +0200
+Received: (qmail 52168 invoked by uid 10051479); 30 Aug 2007 19:07:31 +0200
+Date: Thu, 30 Aug 2007 19:07:31 +0200 (CEST)
+From: =?ISO-8859-2?Q?Szab=F3_Roland?= <inphx@freemail.hu>
+Subject: =?ISO-8859-2?Q?Pr=F3ba_lev=E9l?=
+To: phoenix@dawnspill.hu
+Message-ID: <freemail.20070730190731.52162@fm09.freemail.hu>
+X-Originating-IP: [195.70.44.52]
+X-HTTP-User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.5) Gecko/20070719 Iceweasel/2.0.0.5 (Debian-2.0.0.5-2)
+MIME-Version: 1.0
+Content-Type: MULTIPART/mixed; BOUNDARY="0-1804289383-1188493651=:52162"
+
+--0-1804289383-1188493651=:52162
+Content-Type: MULTIPART/alternative; BOUNDARY="0-846930886-1188493651=:52162"
+
+--0-846930886-1188493651=:52162
+Content-Type: TEXT/plain; CHARSET=ISO-8859-2
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+
+=0A=0APr=F3ba lev=E9l csak.=0A=0A<br><br>__________________________________=
+____________________________________<br><a href=3D"http://ad.adverticum.net=
+/b/cl,1,6022,197349,250288/click.prm" target=3Dnew">CIB Megtakar=EDt=E1si P=
+rogram: Tegyen f=E9lre havonta, mert most
+kis =F6sszegre is magas, 8%-os kamatot adunk! EBKM: 1,00%-7,93%.</a>
+
+--0-846930886-1188493651=:52162
+Content-Type: TEXT/html; CHARSET=ISO-8859-2
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+
+<br /><br />Pr=F3ba lev=E9l csak.=0A<br><br>_______________________________=
+______________________________________<br><a href=3D"http://cthandler.adver=
+ticum.net/?cturl=3Dhttp%3A%2F%2Fwww.klikkbank.hu%2Flakossagi%2Ftermekek%2Fl=
+ekotott_betet%2Findex.html%3Flevelalja" target=3Dnew">Hozza ki a p=E9nz=E9b=
+=F5l a legt=F6bbet! Ak=E1r =E9vi 9,01%, EBKM: 9,50% kamat! www.klikkbank.hu=
+</a>
+
+
+--0-846930886-1188493651=:52162--
+--0-1804289383-1188493651=:52162
+Content-Type: APPLICATION/octet-stream; name="Ékezetes rövidös.dummy"
+Content-Disposition: attachment; filename="Ékezetes rövidös.dummy"
+
+--0-1804289383-1188493651=:52162
+Content-Type: APPLICATION/octet-stream; name="&#195;&#137;kezetes sz&#195;&#179;k&#195;&#182;z&#195;&#182;s hossz&#195;&#186;&#197;&#145;s.dummy"
+Content-Disposition: attachment; filename="&#195;&#137;kezetes sz&#195;&#179;k&#195;&#182;z&#195;&#182;s hossz&#195;&#186;&#197;&#145;s.dummy"
+
+--0-1804289383-1188493651=:52162--
+
