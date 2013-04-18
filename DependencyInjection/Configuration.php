@@ -20,9 +20,14 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('cyclone_component_mail');
 
-        $rootNode
-            ->children()
-                ->booleanNode('debug')->defaultValue(false)->end()
+        $rootNode->children()
+            ->arrayNode('parser')
+                ->children()
+                    ->booleanNode('debug')->defaultValue(false)->end()
+                ->end()
+                ->children()
+                    ->scalarNode('max_size')->defaultValue(10485760)->end()
+                ->end()
             ->end();
 
         return $treeBuilder;

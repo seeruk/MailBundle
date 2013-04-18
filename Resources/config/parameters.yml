@@ -1,3 +1,4 @@
 parameters:
     # Test param ... got there eventually ...
-    cyclone_component_mail.debug: true
+    cyclone_component_mail.parser.debug: true
+    cyclone_component_mail.parser.max_size: 10485760
