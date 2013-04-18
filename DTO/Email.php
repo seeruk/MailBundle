@@ -24,7 +24,7 @@ class Email
     private $subject;
 
     /**
-     * @var DateTime
+     * @var \DateTime
      */
     private $date;
 
@@ -159,7 +159,7 @@ class Email
     /**
      * Get date
      *
-     * @return DateTime
+     * @return \DateTime
      */
     public function getDate()
     {
@@ -169,10 +169,10 @@ class Email
     /**
      * Set date
      *
-     * @param  DateTime $date
+     * @param  \DateTime $date
      * @return Email
      */
-    public function setDate(DateTime $date)
+    public function setDate(\DateTime $date)
     {
         $this->date = $date;
 
