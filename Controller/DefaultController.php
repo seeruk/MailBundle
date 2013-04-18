@@ -11,6 +11,7 @@ namespace Cyclone\Component\MailBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Cyclone\Component\MailBundle\DTO\Email;
+use Cyclone\Component\MailBundle\Parser\MimeParser;
 
 /**
  * Class to store email data, a dumb one at that
@@ -28,6 +29,24 @@ class DefaultController extends Controller
      */
     public function indexAction($name)
     {
+        // The following code needs to be in a helper class, MailReader?
+        // MailAggregator? Does it need to keep all of the messages in some
+        // sort of repository format, or, just previews / the subjects and then
+        // load whole emails when they're requested by the client?
+
+        // Essentially, an email just needs to be a string before being parsed,
+        // it doesn't matter if it comes from a file or if it comes from the
+        // database.
+        $filename = __DIR__ . '/../Resources/mail/sample2.eml';
+        $message  = fread(fopen($filename, 'r'), filesize($filename));
+
+        $parser = new MimeParser();
+
+        if ($parser->parse($message, filesize($filename)))
+        {
+            echo "Message parsed successfully.";
+        }
+
         $email = new Email;
         $email->setSubject('I am here today!')
                 ->setDate(new \DateTime('now'))

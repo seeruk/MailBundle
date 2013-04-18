@@ -23,4 +23,9 @@ class MimeParser
     {
 
     }
+
+    public function parse()
+    {
+        return true;
+    }
 }
