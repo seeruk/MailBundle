@@ -14,7 +14,7 @@ use Cyclone\Component\MailBundle\DTO\Email;
 use Cyclone\Component\MailBundle\Parser\MimeParser;
 
 /**
- * Class to store email data, a dumb one at that
+ * Main controller for testing Cyclone's Mail Parser
  *
  * @author  Elliot Wright <wright.elliot@gmail.com>
  * @package Cyclone
