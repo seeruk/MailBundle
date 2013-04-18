@@ -1,5 +1,10 @@
+imports:
+    - { resource: parameters.yml }
+
 parameters:
 #    cyclone_component_mail.example.class: Cyclone\Component\MailBundle\Example
+#
+    cyclone_component_mail.test: "Whatup"
 
 services:
 #    cyclone_component_mail.example:

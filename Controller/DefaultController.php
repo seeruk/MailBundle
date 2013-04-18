@@ -56,6 +56,8 @@ class DefaultController extends Controller
                 ->setShowAsInline(false);
 
         var_dump($email);
+        var_dump($this->container->getParameter('cyclone_component_mail.test'));
+
 
         return $this->render('CycloneComponentMailBundle:Default:index.html.twig', array('name' => $name));
     }
