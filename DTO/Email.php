@@ -23,115 +23,138 @@ class Email
      */
     private $subject;
 
+
     /**
      * @var \DateTime
      */
     private $date;
+
 
     /**
      * @var string
      */
     private $replyTo;
 
+
     /**
      * @var string
      */
     private $sentTo;
+
 
     /**
      * @var string
      */
     private $sentToName;
 
+
     /**
      * @var string
      */
     private $mimeVersion;
+
 
     /**
      * @var string
      */
     private $messageId;
 
+
     /**
      * @var string
      */
     private $from;
+
 
     /**
      * @var string
      */
     private $fromName ;
 
+
     /**
      * @var string
      */
     private $charset;
+
 
     /**
      * @var string
      */
     private $contentType;
 
+
     /**
      * @var string
      */
     private $transferEncoding;
+
 
     /**
      * @var string
      */
     private $body;
 
+
     /**
      * @var array
      */
     private $mainHeaders;
+
 
     /**
      * @var integer
      */
     private $numAttached;
 
+
     /**
      * @var array
      */
     private $parts;
+
 
     /**
      * @var integer
      */
     private $inlineData;
 
+
     /**
      * @var float
      */
     private $parseTime;
+
 
     /**
      * @var integer
      */
     private $unnamedParts;
 
+
     /**
      * @var string
      */
     private $rawHeaders;
+
 
     /**
      * @var boolean
      */
     private $fetchRawHeaders;
 
+
     /**
      * @var boolean
      */
     private $parsed;
 
+
     /**
      * @var boolean
      */
     private $showAsInline;
+
 
     /**
      * Get subject
@@ -142,6 +165,7 @@ class Email
     {
         return $this->subject;
     }
+
 
     /**
      * Set subject
@@ -156,6 +180,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get date
      *
@@ -165,6 +190,7 @@ class Email
     {
         return $this->date;
     }
+
 
     /**
      * Set date
@@ -179,6 +205,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get replyTo
      *
@@ -188,6 +215,7 @@ class Email
     {
         return $this->replyTo;
     }
+
 
     /**
      * Set replyTo
@@ -202,6 +230,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get sentTo
      *
@@ -211,6 +240,7 @@ class Email
     {
         return $this->sentTo;
     }
+
 
     /**
      * Set sentTo
@@ -225,6 +255,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get sentToName
      *
@@ -234,6 +265,7 @@ class Email
     {
         return $this->sentToName;
     }
+
 
     /**
      * Set sentToName
@@ -248,6 +280,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get mimeVersion
      *
@@ -257,6 +290,7 @@ class Email
     {
         return $this->mimeVersion;
     }
+
 
     /**
      * Set mimeVersion
@@ -271,6 +305,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get messageId
      *
@@ -280,6 +315,7 @@ class Email
     {
         return $this->messageId;
     }
+
 
     /**
      * Set messageId
@@ -294,6 +330,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get from
      *
@@ -303,6 +340,7 @@ class Email
     {
         return $this->from;
     }
+
 
     /**
      * Set from
@@ -317,6 +355,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get fromName
      *
@@ -326,6 +365,7 @@ class Email
     {
         return $this->fromName;
     }
+
 
     /**
      * Set fromName
@@ -340,6 +380,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get charset
      *
@@ -349,6 +390,7 @@ class Email
     {
         return $this->charset;
     }
+
 
     /**
      * Set charset
@@ -363,6 +405,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get contentType
      *
@@ -372,6 +415,7 @@ class Email
     {
         return $this->contentType;
     }
+
 
     /**
      * Set contentType
@@ -386,6 +430,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get transferEncoding
      *
@@ -395,6 +440,7 @@ class Email
     {
         return $this->transferEncoding;
     }
+
 
     /**
      * Set transferEncoding
@@ -409,6 +455,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get body
      *
@@ -418,6 +465,7 @@ class Email
     {
         return $this->body;
     }
+
 
     /**
      * Set body
@@ -432,6 +480,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get mainHeaders
      *
@@ -441,6 +490,7 @@ class Email
     {
         return $this->mainHeaders;
     }
+
 
     /**
      * Set mainHeaders
@@ -455,6 +505,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get numAttached
      *
@@ -464,6 +515,7 @@ class Email
     {
         return $this->numAttached;
     }
+
 
     /**
      * Set numAttached
@@ -478,6 +530,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get parts
      *
@@ -487,6 +540,7 @@ class Email
     {
         return $this->parts;
     }
+
 
     /**
      * Set parts
@@ -501,6 +555,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get inlineData
      *
@@ -510,6 +565,7 @@ class Email
     {
         return $this->inlineData;
     }
+
 
     /**
      * Set inlineData
@@ -524,6 +580,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get parseTime
      *
@@ -533,6 +590,7 @@ class Email
     {
         return $this->parseTime;
     }
+
 
     /**
      * Set parseTime
@@ -547,6 +605,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get unnamedParts
      *
@@ -556,6 +615,7 @@ class Email
     {
         return $this->unnamedParts;
     }
+
 
     /**
      * Set unnamedParts
@@ -570,6 +630,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get rawHeaders
      *
@@ -579,6 +640,7 @@ class Email
     {
         return $this->rawHeaders;
     }
+
 
     /**
      * Set rawHeaders
@@ -593,6 +655,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get fetchRawHeaders
      *
@@ -602,6 +665,7 @@ class Email
     {
         return $this->fetchRawHeaders;
     }
+
 
     /**
      * Set fetchRawHeaders
@@ -616,6 +680,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get parsed
      *
@@ -625,6 +690,7 @@ class Email
     {
         return $this->parsed;
     }
+
 
     /**
      * Set parsed
@@ -639,6 +705,7 @@ class Email
         return $this;
     }
 
+
     /**
      * Get showAsInline
      *
@@ -648,6 +715,7 @@ class Email
     {
         return $this->showAsInline;
     }
+
 
     /**
      * Set showAsInline

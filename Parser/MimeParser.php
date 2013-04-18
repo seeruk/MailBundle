@@ -33,6 +33,7 @@ class MimeParser
         $this->setDebug($debug);
     }
 
+
     /**
      * Get debug
      * @return boolean
@@ -41,6 +42,7 @@ class MimeParser
     {
         return $this->debug;
     }
+
 
     /**
      * Set debug
@@ -53,6 +55,7 @@ class MimeParser
 
         return $this;
     }
+
 
     /**
      * Container function for parsing emails
