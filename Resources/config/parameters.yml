@@ -1,3 +1,3 @@
 parameters:
     # Test param ... got there eventually ...
-    cyclone_component_mail.test: "Whatup"
+    cyclone_component_mail.debug: true

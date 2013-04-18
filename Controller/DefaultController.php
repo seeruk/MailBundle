@@ -40,7 +40,7 @@ class DefaultController extends Controller
         $filename = __DIR__ . '/../Resources/mail/sample2.eml';
         $message  = fread(fopen($filename, 'r'), filesize($filename));
 
-        $parser = new MimeParser();
+        $parser = new MimeParser($this->container->getParameter('cyclone_component_mail.debug'));
 
         if ($parser->parse($message, filesize($filename)))
         {
@@ -75,7 +75,6 @@ class DefaultController extends Controller
                 ->setShowAsInline(false);
 
         var_dump($email);
-        var_dump($this->container->getParameter('cyclone_component_mail.test'));
 
 
         return $this->render('CycloneComponentMailBundle:Default:index.html.twig', array('name' => $name));

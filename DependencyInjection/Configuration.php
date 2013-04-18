@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('test')->defaultValue('test')->end()
+                ->booleanNode('debug')->defaultValue(false)->end()
             ->end();
 
         return $treeBuilder;
