@@ -15,7 +15,6 @@ namespace Cyclone\Component\MailBundle\DTO;
  * @author  Elliot Wright <wright.elliot@gmail.com>
  * @package Cyclone
  * @todo    Validation in setters?
- * @todo    DateTime instead of object?
  */
 class Email
 {
@@ -25,7 +24,7 @@ class Email
     private $subject;
 
     /**
-     * @var object DateTime
+     * @var DateTime
      */
     private $date;
 
@@ -160,7 +159,7 @@ class Email
     /**
      * Get date
      *
-     * @return object
+     * @return DateTime
      */
     public function getDate()
     {
@@ -170,10 +169,10 @@ class Email
     /**
      * Set date
      *
-     * @param  object $date
+     * @param  DateTime $date
      * @return Email
      */
-    public function setDate($date)
+    public function setDate(DateTime $date)
     {
         $this->date = $date;
 
