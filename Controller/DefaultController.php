@@ -41,13 +41,23 @@ class DefaultController extends Controller
         $message  = fread(fopen($filename, 'r'), filesize($filename));
 
         $parser = $this->get('cyclone_component_mail.parser');
+        $logger = $this->get('logger');
 
-        if ($parser->parse($message, filesize($filename)))
-        {
-            echo "Message parsed successfully.";
+        $parser->parse($message, filesize($filename));
+
+        // Log debug information ...
+        if ($parser->getDebug()) {
+            $logger->info('==== [ MailParser - Debug Information ] ====');
+            $logger->info('Parse time: ' . sprintf('%.8f seconds', $parser->getParseTime()));
+            // Add parser time split breakdown ... $parser->getHeaderParseTime(); etc
+            $logger->info('Current memory usage: ' . memory_get_usage());
+            $logger->info('Peak memory usage: ' . memory_get_peak_usage());
+            $logger->info('==== [ MailParser - End Debug Information ] ====');
         }
 
-        $email = new Email;
+        //echo "<pre>" . $message . "</pre>";
+
+/*        $email = new Email;
         $email->setSubject('I am here today!')
                 ->setDate(new \DateTime('now'))
                 ->setReplyTo('Elliot Wright <wright.elliot@gmail.com>')
@@ -74,7 +84,7 @@ class DefaultController extends Controller
                 ->setParsed(true)
                 ->setShowAsInline(false);
 
-        var_dump($email);
+        var_dump($email);*/
 
 
         return $this->render('CycloneComponentMailBundle:Default:index.html.twig', array('name' => $name));
