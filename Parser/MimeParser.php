@@ -24,18 +24,28 @@ class MimeParser
 
 
     /**
+     * @var integer
+     */
+    private $sizeLimit;
+
+
+    /**
      * Constructor
      *
      * @todo Param should be the entire configuration ideally
      */
-    public function __construct($debug)
+    public function __construct($config)
     {
-        $this->setDebug($debug);
+        var_dump($config);
+
+        //$this->setDebug($debug);
+        //$this->setSizeLimit($sizeLimit);
     }
 
 
     /**
      * Get debug
+     *
      * @return boolean
      */
     public function getDebug()
@@ -46,12 +56,38 @@ class MimeParser
 
     /**
      * Set debug
-     * @param boolean $debug
+     *
+     * @param  boolean    $debug
      * @return MimeParser
      */
-    protected function setDebug($debug)
+    public function setDebug($debug)
     {
         $this->debug = $debug;
+
+        return $this;
+    }
+
+
+    /**
+     * Get sizeLimit
+     *
+     * @return integer
+     */
+    public function getSizeLimit()
+    {
+        return $this->sizeLimit;
+    }
+
+
+    /**
+     * Set sizeLimit
+     *
+     * @param  integer    $sizeLimit
+     * @return MimeParser
+     */
+    public function setSizeLimit($sizeLimit)
+    {
+        $this->sizeLimit = $sizeLimit;
 
         return $this;
     }
@@ -65,8 +101,9 @@ class MimeParser
      */
     public function parse($message, $size = 0)
     {
-        if ($size > 12312301923190230123) // Needs to be a config value... lol
+        if ($size > $this->sizeLimit)
         {
+            // Throw an exception here.
             return false;
         }
 

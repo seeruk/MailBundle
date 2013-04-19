@@ -1,7 +1,14 @@
-imports:
-    - { resource: parameters.yml }
+parameters:
+    # Classes
+    cyclone_component_mail.class.parser: Cyclone\Component\MailBundle\Parser\MimeParser
+
+    # Config
+    cyclone_component_mail.config:
+        debug: true
+        parser:
+            size_limit: 10485760
 
 services:
-#    cyclone_component_mail.example:
-#        class: %cyclone_component_mail.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    cyclone_component_mail.parser:
+        class: %cyclone_component_mail.class.parser%
+        arguments: [%cyclone_component_mail.config%]

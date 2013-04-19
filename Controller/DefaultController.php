@@ -40,7 +40,7 @@ class DefaultController extends Controller
         $filename = __DIR__ . '/../Resources/mail/sample2.eml';
         $message  = fread(fopen($filename, 'r'), filesize($filename));
 
-        $parser = new MimeParser($this->container->getParameter('cyclone_component_mail.parser.debug'));
+        $parser = $this->get('cyclone_component_mail.parser');
 
         if ($parser->parse($message, filesize($filename)))
         {
